@@ -10,11 +10,16 @@
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 body{
     font-size: 16px; 
     font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top,#DFE9F3 0%,var(--blanco) 100%);
 }
 
 header{
@@ -26,10 +31,26 @@ header{
     text-align: right;
 }
 
+h2{
+    font-size: 2rem;
+}
+
+h3{  font-size: 2rem;
+
+}
+
 .titulo{
     text-align: center;
     font-size: 2rem;
   
+}
+
+.subtitulo{
+    color: var(--negro);
+    justify-content: center;
+    text-align: center;
+    background-color: #e0f0f8;
+    margin: 0px;
 }
 
 .tiutlo span{
@@ -39,11 +60,13 @@ header{
 
 .contenedor{
     width: 120rem;
-    margin: 0 auto;
+    margin: 0px;
 }
 
 .nav-bg{
     background-color: var(--azul_1);
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -65,11 +88,33 @@ header{
     font-size: 2rem;
     font-weight: bold;
     padding: 3rem;
+    margin: 0px;
 }
 
 .navegacion-principal a:hover{
     background-color: rgba(7, 7, 236, 0.541);
     color:rgb(8, 0, 255) ;
 }
-    
 
+.jumbo{
+    background-image: url(img/background_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    justify-content: space-around;
+    align-items: center;
+    width: 128rem;
+    height: 40rem;
+}
+
+   
+.contenedor_presentacion{
+    color: #ffffff;
+   justify-content: flex-start;
+}
+
+.contacto{
+   
+}
