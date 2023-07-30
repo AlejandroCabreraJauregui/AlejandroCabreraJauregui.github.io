@@ -119,6 +119,7 @@ h3{  font-size: 2rem;
 .navegacion-principal{
     display: flex;
     flex-direction: column;
+    width: cover;
 }
 
 @media (min-width: 480px) {
@@ -138,8 +139,8 @@ h3{  font-size: 2rem;
 }
 
 .navegacion-principal a:hover{
-    background-color: rgba(7, 7, 236, 0.541);
-    color:rgb(8, 0, 255) ;
+    background-color: rgba(7, 7, 236, 0.55);
+    color:var(--negro) ;
 }
 
 .jumbo{
@@ -280,5 +281,29 @@ h3{  font-size: 2rem;
 /** Footer **/
 .footer{
 background-color:#000000af;
-height: 30rem;
+height: 20rem;
+color: #ffffff;
+display: flex;
+flex-direction: column;
+text-align:center;
+align-items:center;
+
+}
+
+.footer a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 3rem;
+   margin: 3rem;
+}
+
+.redes-sociales{
+    margin: 3rem;
+    text-align:justify ;
+}
+
+.redes-sociales:hover{
+    cursor: pointer;
 }
